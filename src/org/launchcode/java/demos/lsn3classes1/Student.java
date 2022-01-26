@@ -41,19 +41,19 @@ public class Student {
         Student.nextStudentId = nextStudentId;
     }
 
-    public String addGradeLevel(){
+    public static String addGradeLevel(int credits){
         String gradeLevel = "";
 
-        if (this.numberOfCredits <= 29 ){
-            gradeLevel = "Freshman";
-        } else if (this.numberOfCredits <= 59 && this.numberOfCredits > 29){
-            gradeLevel = "Sophomore";
-        } else if (this.numberOfCredits <=89 && this.numberOfCredits >59){
-            gradeLevel = "Junior";
+        if (credits <= 29 ){
+            return "Freshman";
+        } else if (credits <= 59 && credits > 29){
+            return "Sophomore";
+        } else if (credits <=89 && credits >59){
+            return "Junior";
         } else {
-            gradeLevel = "Senior";
+            return "Senior";
         }
-        return gradeLevel;
+
     }
 
     public double addGrade(int courseCredits, double grade){

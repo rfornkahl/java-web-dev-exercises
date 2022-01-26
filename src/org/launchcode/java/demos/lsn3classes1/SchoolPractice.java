@@ -8,7 +8,7 @@ public class SchoolPractice {
         System.out.println("Student ID: " + sam.getStudentId());
         System.out.println("Number of Credit Hours: " + sam.getNumberOfCredits());
         System.out.println("GPA: " + sam.getGpa());
-        System.out.println(sam.getName() + " is a " + sam.addGradeLevel());
+        System.out.println(sam.getName() + " is a " + sam.addGradeLevel(15));
         sam.addGrade(4, 3.5);
         System.out.println("GPA: " + sam.getGpa());
         System.out.println("Number of Credit Hours: " + sam.getNumberOfCredits());
@@ -18,7 +18,7 @@ public class SchoolPractice {
         System.out.println("Student ID: " + rob.getStudentId());
         System.out.println("Number of Credit Hours: " + rob.getNumberOfCredits());
         System.out.println("GPA: " + rob.getGpa());
-        System.out.println(rob.getName() + " is a " + rob.addGradeLevel());
+        System.out.println(rob.getName() + " is a " + rob.addGradeLevel(30));
         rob.addGrade(4, 3.0);
         System.out.println("GPA: " + rob.getGpa());
         System.out.println("Number of Credit Hours: " + rob.getNumberOfCredits());
